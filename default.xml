@@ -3,6 +3,8 @@
 
   <remote  name="aosp"
            fetch=".." />
+  <remote  name="github"
+           fetch="https://github.com/shivgadhia/" />
   <default revision="refs/tags/android-5.0.0_r7"
            remote="aosp"
            sync-j="4" />
@@ -505,5 +507,7 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  <project path="vendor" name="platform_vendor" remote="github" revision="master" />
+  <project path="vendor/shivgadhia" name="platform_vendor_shivgadhia" remote="github" revision="master" />
 
 </manifest>
